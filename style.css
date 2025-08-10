@@ -1,0 +1,551 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  width: 75%;
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.hero {
+  background: linear-gradient(120deg, #007bff, #28a745);
+  background-image: url(images/px.jpg);
+  background-size: cover;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero .date-location {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+section {
+  padding: 3rem 0;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  
+}
+
+.topics ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+  padding: 0;
+  margin-top: 1rem;
+    margin-bottom: 1rem;
+  
+}
+
+.topics li {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 1rem 0;
+  text-align: center;
+  
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: #007bff;
+  border-radius: 5px;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  
+}
+.contact h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  
+}
+.contact h4 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  
+}
+
+.card {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.1s ease;
+}
+.card img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+
+.schedule-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.schedule-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.schedule-card:hover {
+  transform: translateY(-5px);
+}
+
+.schedule-card h3 {
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+
+.schedule-card ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.schedule-card ul li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+.speaker-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.speaker-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 0.5rem;
+  width: 6px;
+  text-align: center;
+  /* transition: transform 0.3s ease; */
+}
+
+.speaker-card:hover {
+  transform: scale(1.10);
+}
+
+.speaker-card img {
+  border-radius: 20%;
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.speaker-card h3 {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.speaker-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.register-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.register-card h3 {
+  color: #28a745;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.fee-table th,
+.fee-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.fee-table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.fee-table td {
+  background-color: #f9f9f9;
+}
+
+.account-details p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+<style>
+  .patron-speakers {
+    background: linear-gradient(to bottom, #f5f5ff, #ffffff);
+    padding: 60px 50px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .patron-speakers h3 {
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: #222;
+  }
+
+  .speaker-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .speaker-card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+  }
+
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .speaker-card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: white;
+    padding: 20px;
+  }
+
+  .card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+
+  .card-front img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease;
+  }
+
+  .card-front h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+  }
+
+  .card-front p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .card-back {
+    background-color: #f0f0f0;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    color: #333;
+  }
+
+  .badge {
+    margin-top: 10px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    color: #fff;
+    animation: fadeInUp 0.6s ease both;
+  }
+
+  .badge.gold {
+    background-color: #d4af37;
+  }
+
+  .badge.silver {
+    background-color: #c0c0c0;
+  }
+
+  .badge.bronze {
+    background-color: #cd7f32;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+.members-section {
+      padding: 10px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .members-section h3 {
+      font-size: 22px;
+      margin-bottom: 30px;
+      color: #333;
+      text-align: center;
+    }
+
+    .member-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .member-card {
+      background-color: #fff;
+      border-radius: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s ease;
+    }
+  .member-card.highlight {
+      border-color: #007acc;
+    }
+
+    .member-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .member-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #003366;
+      text-align: center;
+    }
+
+    .member-role {
+      font-size: 14px;
+      color: #666;
+      margin-top: 2px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .member-card {
+        width: 90%;
+      }
+    }
+
+.committee-section {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .committee-title {
+      font-size: 2em;
+      color: #003366;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    .committee-title::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #007acc;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .committee-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      padding: 10px;
+    }
+
+    .committee-member-card {
+      background: #fff;
+      border: 3px solid transparent;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease, border 0.3s ease;
+    }
+
+    .committee-member-card.highlight {
+      border-color: #007acc;
+    }
+
+    .committee-member-card:hover {
+      transform: translateY(-5px);
+      border-color: #3399ff;
+    }
+
+   
+    .committee-member-name {
+      font-size: 0.8em;
+      color: #003366;
+      font-weight: bold;
+    }
+
+    .committee-member-role {
+      color: #555;
+      font-size: 0.7em;
+      margin-top: 5px;
+    }
+#backToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+#backToTopBtn:hover {
+  background-color: #555;
+}
